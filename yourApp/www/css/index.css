@@ -1,0 +1,44 @@
+p {
+    font-size: 250%;
+}
+
+#pascst-header {
+    position: absolute;
+    height: 400px;
+    top: 50%;
+    margin-top: -200px;
+}
+
+#paBtn {
+    background-color: #B08527;
+    color: #ffffff;
+}
+
+#scBtn {
+    background-color: #E1D03A;
+    color: #ffffff;
+}
+
+#stBtn {
+    background-color: #548CB1;
+    color: #ffffff;
+}
+
+#startBtn {
+    background-color: #aa00ff;
+    color: #ffffff;
+    /*slove button capitial text problem*/
+    text-transform: initial;
+}
+
+#pa {
+    color: #B08527;
+}
+
+#sc {
+    color: #E8CC3C;
+}
+
+#st {
+    color: #558BAF;
+}

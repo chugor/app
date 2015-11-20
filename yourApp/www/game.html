@@ -3,7 +3,7 @@
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
+    regarding copymiddle ownership.  The ASF licenses this file
     to you under the Apache License, Version 2.0 (the
     "License"); you may not use this file except in compliance
     with the License.  You may obtain a copy of the License at
@@ -40,24 +40,65 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" type="text/css" href="css/mdl.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
     <title>Hello World</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div id="pascst-header">
-            <p id="pa"><b>Paper</b></p>
-            <p><b><span id="sc">Scissors</span></b>
-                <button class="waves-effect waves-light btn" id="startBtn"><b>Start</b></button>
-            </p>
-            <p id="st"><b>Stone</b></p>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         </div>
+    </div>
+    <div class="row" align="middle">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" align="middle">
+            <p id="userScoreBoard">User: 0</p>
+            <p><img src="img/blank.jpg" height="150" width="150" id="userImg"></p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" align="middle">
+            <p id="cpuScoreBoard">CPU: 0</p>
+            <p><img src="img/blank.jpg" height="150" width="150" id="cpuImg"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="middle">
+            <p><img src="img/pascst-pa.jpg" height="50" width="50"></p>
+            <p>
+                <button class="waves-effect waves-light btn" id="paBtn">USE</button>
+            </p>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="middle">
+            <p><img src="img/pascst-sc.jpg" height="50" width="50"></p>
+            <p>
+                <button class="waves-effect waves-light btn" id="scBtn">USE</button>
+            </p>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="middle">
+            <p><img src="img/pascst-st.jpg" height="50" width="50"></p>
+            <p>
+                <button class="waves-effect waves-light btn" id="stBtn">USE</button>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 50%" id="userBar">
+                    
+                </div>
+                
+                <div class="progress-bar progress-bar-danger" style="width: 50%" id="cpuBar">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
     </div>
     <!--js-->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index-function.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+#paBtn {
+    background-color: #B08527;
+    color: #ffffff;
+}
+
+#scBtn {
+    background-color: #E1D03A;
+    color: #ffffff;
+}
+
+#stBtn {
+    background-color: #548CB1;
+    color: #ffffff;
+}
+
+#userScoreBoard, #cpuScoreBoard{
+	font-size: 150%;
+	font-weight: bold;
+}
